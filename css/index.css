@@ -2,6 +2,7 @@
 
 @import './navbar.css';
 @import './main.css';
+@import './about-us.css';
 
 @font-face {
     font-family: nunito;
@@ -20,6 +21,7 @@
     font-family: nunito;
     --primary-color: #697ee7;
     --secondary-color: #222;
+    --third-color: #5a248f;
     --navbar-list-color: #697ee7;
     --navbar-list-hover-color: #5464b6;
     --navbar-list-secondary-hover-color: #4353a5;
@@ -44,4 +46,8 @@
 
 .mb {
     margin-bottom: 15px;
+}
+
+body {
+    height: 1500px;
 }

@@ -4,6 +4,9 @@
 
 #main-header {
     display: flex;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #main-header > * {

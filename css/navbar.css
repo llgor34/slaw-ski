@@ -1,10 +1,12 @@
 .navbar {
     background-color: var(--navbar-list-color);
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
+    position: sticky;
+    top: 0;
 }
 
 .navbar .logo {
@@ -43,7 +45,7 @@
 
 .mobile-button .line {
     width: 25px;
-    height: 2px;
+    height: 2.5px;
     background-color: #fff;
     margin: 6px 0;
 }
@@ -58,7 +60,8 @@
         align-items: stretch;
         background-color: var(--navbar-list-hover-color);
         max-height: 0;
-        transition: max-height 0.4s ease-in;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
     }
 
     .navbar.active ul {
