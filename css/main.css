@@ -1,0 +1,39 @@
+.main-image img {
+    width: 100%;
+}
+
+#main-header {
+    display: flex;
+}
+
+#main-header > * {
+    flex-basis: 50%;
+}
+
+#main-header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5rem;
+}
+
+#main-header h1 {
+    font-family: 'Anton';
+    font-size: 2.4em;
+    color: var(--secondary-color);
+}
+
+#main-header p {
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    #main-header {
+        flex-direction: column-reverse;
+    }
+
+    #main-header .text {
+        padding: 20px;
+    }
+}

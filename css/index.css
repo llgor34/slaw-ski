@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import './navbar.css';
+@import './main.css';
+
+@font-face {
+    font-family: nunito;
+    src: url('../assets/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: nunito;
+    --primary-color: #697ee7;
+    --secondary-color: #222;
+    --navbar-list-color: #697ee7;
+    --navbar-list-hover-color: #5464b6;
+    --navbar-list-secondary-hover-color: #4353a5;
+}
+
+.btn-primary {
+    font-family: inherit;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #9369e7;
+    color: #fff;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: #a47af8;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
