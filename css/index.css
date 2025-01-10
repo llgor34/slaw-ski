@@ -3,6 +3,7 @@
 @import './navbar.css';
 @import './main.css';
 @import './about-us.css';
+@import './pricing.css';
 
 @font-face {
     font-family: nunito;
@@ -19,12 +20,16 @@
 
 :root {
     font-family: nunito;
-    --primary-color: #697ee7;
+    --primary-color: #5a248f;
     --secondary-color: #222;
-    --third-color: #5a248f;
-    --navbar-list-color: #697ee7;
-    --navbar-list-hover-color: #5464b6;
-    --navbar-list-secondary-hover-color: #4353a5;
+    --navbar-list-color: #5a248f;
+    --navbar-list-hover-color: #7c46a0;
+    --navbar-list-secondary-hover-color: #6b359f;
+}
+
+h2 {
+    font-family: 'Anton';
+    font-size: 2.4em;
 }
 
 .btn-primary {
@@ -48,6 +53,7 @@
     margin-bottom: 15px;
 }
 
-body {
-    height: 1500px;
+.table-responsive {
+    overflow: auto;
+    width: 100%;
 }

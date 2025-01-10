@@ -1,5 +1,5 @@
 #about-us {
-    background-color: var(--third-color);
+    background-color: var(--primary-color);
     color: #fff;
     display: flex;
     justify-content: space-evenly;
@@ -15,8 +15,6 @@
 }
 
 #about-us h2 {
-    font-family: 'Anton';
-    font-size: 2.4em;
     color: #fff;
 }
 

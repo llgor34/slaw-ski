@@ -1,0 +1,39 @@
+#pricing {
+    padding: 25px;
+}
+
+#pricing h2 {
+    text-align: center;
+}
+
+#pricing p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#pricing table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pricing table td {
+    padding: 25px;
+}
+
+#pricing table tr:nth-child(odd) {
+    background-color: #c0a7f4;
+}
+
+#pricing table tr:first-child td,
+#pricing table tr td:first-child {
+    font-weight: bold;
+}
+
+#pricing table tr:last-child td {
+    border-bottom: 0;
+}
