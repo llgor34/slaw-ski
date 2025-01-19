@@ -3,7 +3,10 @@
 @import './navbar.css';
 @import './main.css';
 @import './about-us.css';
-@import './pricing.css';
+@import './gallery.css';
+@import './contact.css';
+@import './location.css';
+@import './rules.css';
 
 @font-face {
     font-family: nunito;
@@ -20,10 +23,10 @@
 
 :root {
     font-family: nunito;
-    --primary-color: #5a248f;
+    --primary-color: #211d4e;
+    --secondary-bg-color: #fff;
     --secondary-color: #222;
-    --navbar-list-color: #5a248f;
-    --navbar-list-hover-color: #7c46a0;
+    --navbar-list-hover-color: #e31f1f;
     --navbar-list-secondary-hover-color: #6b359f;
 }
 
@@ -43,15 +46,11 @@ h2 {
     border-radius: 10px;
     outline: none;
     border: none;
-    background-color: #9369e7;
+    background-color: var(--navbar-list-hover-color);
     color: #fff;
     transition: background-color 0.2s;
     font-size: 0.9rem;
-}
-
-.btn-primary:hover {
     cursor: pointer;
-    background-color: #a47af8;
 }
 
 .mb {
@@ -61,4 +60,19 @@ h2 {
 .table-responsive {
     overflow: auto;
     width: 100%;
+}
+
+.card {
+    padding: 25px;
+    padding-bottom: 70px;
+}
+
+.card.primary {
+    background-color: var(--secondary-bg-color);
+    color: #000;
+}
+
+.card.secondary {
+    background-color: var(--primary-color);
+    color: #fff;
 }

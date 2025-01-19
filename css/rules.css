@@ -1,0 +1,12 @@
+#regulamin > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#regulamin ol {
+    padding: 10px 50px;
+}
+
+#regulamin ol li {
+    padding: 2px 0;
+}

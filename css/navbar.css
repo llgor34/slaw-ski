@@ -1,7 +1,7 @@
 .navbar {
-    background-color: var(--navbar-list-color);
+    background-color: var(--primary-color);
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
@@ -10,7 +10,9 @@
 }
 
 .navbar .logo {
-    width: 80px;
+    width: 85px;
+    background-color: #fff;
+    border-bottom-right-radius: 50px;
 }
 
 .navbar img {
@@ -26,6 +28,7 @@
 
 .navbar a {
     display: contents;
+    color: inherit;
 }
 
 .navbar a:visited {
@@ -68,15 +71,15 @@
         align-items: stretch;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease-out;
+        transition: max-height 0.5s ease-out;
     }
 
     .navbar.active ul {
-        max-height: 300px;
+        max-height: 500px;
     }
 
     .navbar ul li {
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
     .mobile-button {
@@ -87,6 +90,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 30px;
+        padding-right: 30px;
     }
 }
