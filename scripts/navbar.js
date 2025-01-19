@@ -1,24 +1,25 @@
 const navButton = document.querySelector('.mobile-button');
 const navbar = document.querySelector('.navbar');
-const navLinks = navbar.querySelectorAll('a');
+const navLinks = document.querySelectorAll('a');
 
 navButton.addEventListener('click', (e) => {
     e.preventDefault();
     navbar.classList.toggle('active');
 });
 
-navLinks.forEach((navLink) =>
+navLinks.forEach((navLink) => {
+    if (!shouldScrollToElement(navLink)) {
+        return;
+    }
+
     navLink.addEventListener('click', (e) => {
         const element = e.target.closest('a');
+        e.preventDefault();
 
-        if (shouldScrollToElement(element)) {
-            e.preventDefault();
-
-            const scrollElementSelector = getElementSelector(element);
-            closeNavbarIfNecessary().then(() => scrollToElementBySelector(scrollElementSelector));
-        }
-    })
-);
+        const scrollElementSelector = getElementSelector(element);
+        closeNavbarIfNecessary().then(() => scrollToElementBySelector(scrollElementSelector));
+    });
+});
 
 function shouldScrollToElement(element) {
     return element.hasAttribute('scrollToElement');
