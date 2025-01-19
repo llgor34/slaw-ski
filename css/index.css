@@ -27,6 +27,11 @@
     --navbar-list-secondary-hover-color: #6b359f;
 }
 
+:root,
+body {
+    scroll-behavior: smooth;
+}
+
 h2 {
     font-family: 'Anton';
     font-size: 2.4em;

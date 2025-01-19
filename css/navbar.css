@@ -24,6 +24,14 @@
     flex-grow: 1;
 }
 
+.navbar a {
+    display: contents;
+}
+
+.navbar a:visited {
+    color: inherit;
+}
+
 .navbar ul li {
     height: 100%;
     flex-grow: 1;
@@ -58,22 +66,17 @@
 
     .navbar ul {
         align-items: stretch;
-        background-color: var(--navbar-list-hover-color);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease;
+        transition: max-height 0.4s ease-out;
     }
 
     .navbar.active ul {
-        max-height: 500px;
+        max-height: 300px;
     }
 
     .navbar ul li {
         padding: 15px 0;
-    }
-
-    .navbar ul li:hover {
-        background-color: var(--navbar-list-secondary-hover-color);
     }
 
     .mobile-button {

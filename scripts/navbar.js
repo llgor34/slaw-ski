@@ -9,7 +9,7 @@ navButton.addEventListener('click', (e) => {
 
 navLinks.forEach((navLink) =>
     navLink.addEventListener('click', (e) => {
-        const element = e.target;
+        const element = e.target.closest('a');
 
         if (shouldScrollToElement(element)) {
             e.preventDefault();
@@ -30,7 +30,7 @@ function getElementSelector(element) {
 
 function closeNavbarIfNecessary() {
     return new Promise((resolve, reject) => {
-        if (navbar.classList.contains('active') && window.screen.width <= 1000) {
+        if (navbar.classList.contains('active') && window.innerWidth <= 1000) {
             navbar.classList.remove('active');
             navbar.addEventListener('transitionend', resolve);
         } else {
